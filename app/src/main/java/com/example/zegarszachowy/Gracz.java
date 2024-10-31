@@ -18,7 +18,7 @@ public class Gracz {
     }
 
     public void stopTimer(){
-        czyDziala = false;
+        countDownTimer.cancel();
     }
 
     public void startTimer(){
@@ -36,6 +36,7 @@ public class Gracz {
                 buttonGracza.setText("KONIEC");
             }
         };
+        countDownTimer.start();
     }
 
 }

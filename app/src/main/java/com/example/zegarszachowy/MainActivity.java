@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         buttonGracz1 = findViewById(R.id.button);
         buttonGracz2 = findViewById(R.id.button2);
         gracz1 = new Gracz(true,buttonGracz1);
+        gracz1.startTimer();
         gracz2 = new Gracz(false,buttonGracz2);
         buttonGracz1.setOnClickListener(new View.OnClickListener() {
             @Override
